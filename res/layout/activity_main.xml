@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff000000"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="480dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#ff707070"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ToggleButton
+                android:id="@+id/tgbRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dip"
+                android:text="@string/toggleRecordingOff"
+                android:textOff="@string/toggleRecordingOn"
+                android:textOn="@string/toggleRecordingOff" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvRecTimeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_RecTime"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvRecordTime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="00:00:00" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvOutputFileLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cameraOutputFileLabel_text"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvOutputFile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="4dp"
+                        android:text="@string/cameraOutputFile_text"
+                        android:textSize="10sp" />
+                </TableRow>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/tvBoardLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_board"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvBoard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="00.0 ºC"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/tvModemLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_modem"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvModem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="00.0 ºC"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/tvCpuLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_Cpu"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvCpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.0 ºC"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/tvGpuLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_Gpu"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvGpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.0 ºC"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvMotion01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MTD\nCH01"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <ToggleButton
+                    android:id="@+id/tgbMDetect01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:minWidth="44dp"
+                    android:text="ToggleButton" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvMotion03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MTD\nCH03"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <ToggleButton
+                    android:id="@+id/tgbMDetect03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:minWidth="44dp"
+                    android:text="ToggleButton" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvMotion04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MTD\nCH04"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <ToggleButton
+                    android:id="@+id/tgbMDetect04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:minWidth="44dp"
+                    android:text="ToggleButton" />
+            </LinearLayout>
+        </TableRow>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ToggleButton
+                android:id="@+id/tgbEvent"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:text="@string/toggleEventOn"
+                android:textOff="@string/toggleEventOn"
+                android:textOn="@string/toggleEventOff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnSens2"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="12dp"
+                        android:text="SensP"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/tvSens2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:text="00"
+                        android:textSize="10sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnSens"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="12dp"
+                        android:text="SensT"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/tvSens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:text="60600060"
+                        android:textSize="10sp" />
+                </TableRow>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Video\nInput : "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff8080A0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvVinput01"
+                    android:layout_width="46dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="#ffff0000"
+                    android:gravity="center"
+                    android:text="1" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvVinput03"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffff0000"
+                        android:gravity="center"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/tvVinput04"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffff0000"
+                        android:gravity="center"
+                        android:text="4" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnDclear"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Motion\nDetect "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff8080A0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvDetect01"
+                    android:layout_width="46dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="#fff07070"
+                    android:gravity="center"
+                    android:text="1" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvDetect03"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#fff07070"
+                        android:gravity="center"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/tvDetect04"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#fff07070"
+                        android:gravity="center"
+                        android:text="4" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <ScrollView
+            android:id="@+id/scvLog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvLog"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:textSize="10sp" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

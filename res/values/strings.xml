@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MediaRecorder</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cameraOutputFileLabel_text">Outfile:</string>
+    <string name="toggleRecordingOn">Start Rec.</string>
+    <string name="toggleRecordingOff">Stop Rec.</string>
+    <string name="cameraOutputFile_text">[filename]</string>
+    <string name="label_modem">"Modem : "</string>
+    <string name="label_board">&quot;Board    : &quot;</string>
+    <string name="label_Cpu">&quot;CPU       : &quot;</string>
+    <string name="label_Gpu">&quot;GPU       : &quot;</string>
+    <string name="label_RecTime">"Elaspe Time : "</string>
+    <string name="toggleEventOn">Event On</string>
+    <string name="toggleEventOff">Event Off</string>    
+    
+</resources>
