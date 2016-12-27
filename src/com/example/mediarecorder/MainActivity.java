@@ -17,6 +17,7 @@ import android.content.ServiceConnection;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.os.IBinder;
 import android.os.Messenger;
 import android.util.Log;
@@ -30,7 +31,7 @@ import android.widget.ToggleButton;
 
 public class MainActivity extends Activity {
 
-	private static final String TAG = "MediaRecord";
+	public static final String TAG = "MediaRecord";
 
 	private boolean mbIsRecording = false;
 	private CameraPreview mPreview;
@@ -89,6 +90,15 @@ public class MainActivity extends Activity {
 		setScaler();
 		// 버튼을 설정한다
 		setButtons();
+
+//	자동 녹화 시작 버튼		
+//		Handler handle = new Handler();
+//		handle.postDelayed(new Runnable() {
+//			@Override
+//			public void run() {
+//				mTgbRecord.performClick();				
+//			}
+//		}, 3000);
 		
 	}
 	
